@@ -44,7 +44,7 @@ const Navbar = () => {
     <NavLink to='/products' className="btn">Visit Shop</NavLink>
     
   </div>
-</div>
+        </div>
     );
 };
 
