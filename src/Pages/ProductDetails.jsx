@@ -15,6 +15,10 @@ const ProductDetails = () => {
 
 
     const handleAddToWishlist = () =>{
+
+        const existingList= JSON.parse(localStorage.getItem('wishlist'))
+        console.log(existingList)
+
         localStorage.setItem('wishlist' , JSON.stringify(product))
     }
     return (
