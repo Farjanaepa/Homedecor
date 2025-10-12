@@ -12,6 +12,8 @@ const ErrorPage = () => {
 
     
     <div>{error.message}</div> 
+             <div> Opps!  Nothing to show. there is an error 
+                  </div>
     <Footer />
         </>
     )
