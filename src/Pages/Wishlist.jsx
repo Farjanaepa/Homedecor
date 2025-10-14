@@ -39,7 +39,7 @@ const Wishlist = () => {
          </div>
 
             <div className='space-y-3'>
-                {sortedItem.map(p => (
+                {sortedItem().map(p => (
                     <div key={p.id} className="card card-side bg-base-100 shadow-sm">
             <figure>
             <img 
@@ -50,6 +50,7 @@ const Wishlist = () => {
             <div className="card-body">
                 <h2 className="card-title">{p.name}</h2>
                 <p className='text-base-content/70'>{p.category}</p>
+                <p className='text-base-content/70'>Price : {p.price} $</p>
                 <div className="card-actions justify-end">
                 <button className="btn btn-primary">Remove</button>
                 </div>
